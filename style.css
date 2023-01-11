@@ -1,0 +1,422 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: #020c1f;
+}
+
+.btn-wsp{
+    position:fixed;
+    width:60px;
+    height:60px;
+    line-height: 63px;
+    bottom:7px;
+    right:10px;
+    background:#25d366;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    font-size:35px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+    z-index:100;
+    transition: all 300ms ease;
+}
+.btn-wsp:hover{
+    color: #20ba5a;
+    background-color: white;
+}
+
+/* MENU DE NAVEGACIÓN  */
+header{
+    width: 100%;
+    height: 100px;    
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2), 0 4px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 0 0 20% 20%;
+    background-color: #434570;
+
+    position: fixed;
+    z-index: 1
+}
+#header-hidden{
+    opacity: 1;
+    transition: opacity 0 0.5s;
+    display: none;
+}
+.container-header{
+    max-width: 1200px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+.menu nav{
+    margin: 0px 20px;
+}
+.menu nav ul{
+    display: flex;
+}
+.menu nav ul li{
+    list-style: none;
+    margin: 20px 16px;
+
+}
+.menu nav ul li a{
+    color: white;
+    font-size: 16px;
+    position: relative;
+
+}
+.menu nav ul li a:hover{
+    color: rgb(242, 168, 50);
+}
+.btn{
+    display: block;
+    padding: 8px 40px;
+    border: 2px solid #9a00bf;
+    border-radius: 8px;
+    font-weight: 500;
+    margin: 0px 20px;
+}
+
+/*PRIMER SECCION */
+.container-cover{
+    height: 100vh;
+    width: 100%;
+    /* padding-top: 100px; */
+}
+.kanji-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cover-image{
+    max-width: 100%;
+    padding: 0px 20px;
+}
+
+/* SEGUNDA SECCION */
+.container-second-section{
+    width: 100%;
+    height: 100vh;
+}
+.second-cover{
+    height: 100%;
+}
+.text-cover{
+    text-align: left;
+    height: 50%;
+    padding: 50px 50px;
+    display: flex;
+    align-items: center;
+}
+.image-cover{
+    width: 100%;
+    height: 50%;
+    display: flex;
+}
+.first-image{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.h1-cover{
+    font-size: 1.8rem;
+    margin: 3px 0px;
+    color: #fbd895;
+    padding: 0px;
+}
+.p-cover{
+    font-size: 1rem;
+    line-height: 2rem;
+    text-align: left;
+    font-weight: 300;
+}
+.h2-cover{
+    font-weight: 100;
+}
+
+h1, h2, p{
+    color: white;
+}
+h2{
+    font-size: 1.3rem;
+    font-style: italic;
+    font-weight: 200;
+}
+h1{
+    font-size: 1.5rem;
+    margin: 10px 0px;
+}
+p{
+    font-size: 1rem;
+    line-height: 2.3rem;
+}
+
+/* TERCER SECCIÓN */
+.card{
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(94, 94, 199);
+    text-align: center;
+    width: 100%;
+} 
+.card__title{
+    font-size: 19px;
+    font-weight: 500;
+    font-style: normal;
+    padding: 1% 0;
+    color: #ffa08a;
+}
+.card__img{
+    width: 15vh;
+}
+.card__paragraph{
+    max-width: 15rem;
+    line-height: 2rem;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+/* CUARTA SECCION - NIVELES */
+.contenedor-cuarta-seccion {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+  }
+.contenedor-card {
+    width: 33.3%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+.card-overlay {
+    background-color: rgba(151, 2, 2, 0.26);
+    color: white;
+    width: 71%;
+    height: 76%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+  }
+.texto-card{
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: 300;
+    line-height: 2.5rem;
+    text-align: center;
+}
+#contenedor-1{
+    background-image: url("kanji.png");
+    min-width: 100%;
+}
+#contenedor-2{
+    background-image: url("2.png");
+    min-width: 100%;
+}
+#contenedor-3{
+    background-image: url("anime.jpg");
+    min-width: 100%;
+}
+
+/* QUINTA SECCION */
+.quinta-seccion{
+    padding: 50px;
+    background-color: rgb(94, 94, 199);
+    align-items: center;
+    align-content: center;
+}
+.niveles-quinta{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 3rem;
+    padding: 60px 0px;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+.contenedor-quinta-seccion{
+    align-items: center;
+    align-content: center;
+}
+.contenedor-boton{
+    text-align: center;
+}
+.button-design{
+    border: 2px solid #333; 
+    padding: 12px 24px; 
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 16px; 
+    margin: 4px 2px; 
+    transition-duration: 0.4s;
+    cursor: pointer; 
+    background-color: #d0a0ff;
+    border-radius: 100px;
+}
+.button-design:hover {
+    background-color: #ff9297d6;
+}
+.titulo-quinta{
+    font-size: 1.5rem;
+    margin: 10px 0px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #ffce3d;
+}
+.quinta-seccion .card__title{
+    color: #fbd895;
+}
+.god{
+    color: #ff7979;
+}
+
+/* ULTIMA SECCION */
+.haiku {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.h1-haiku {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 1px;
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+    line-height: 4rem;
+}
+.span-haiku{
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #ff8c00;
+    font-weight:400;
+}
+.hiragana{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(94, 94, 199);
+    padding: 0px 50px;
+}
+.hiragana-titulo{
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.5rem;
+    font-size: 33px;
+    padding: 0px 50px;
+    color: #fff8f4;
+}
+.hiragana-subtitulo{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 19px;
+    padding: 0px 50px;
+    font-weight: 200;
+    color: #e9d1fd;
+    font-style: normal;
+    line-height: 3rem;
+    letter-spacing: 0.23rem;
+}
+    
+/* QUERIES */
+@media screen and (min-width: 480px){
+
+.text-cover{
+    display: flex;
+    align-items: center;
+    height: 40%;
+}
+.image-cover{
+    height: 60%;
+}
+}
+
+@media screen and (min-width: 767px){
+
+/* SEGUNDA SECCION */
+.second-cover{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.text-cover{
+    padding: 0px 10%;
+    max-width: 55%;
+}
+.image-cover{
+    height: 100vh;
+}
+.h1-cover{
+    /* font-size: 3rem; */
+    font-size: 4vh;
+    margin: 3px 0px;
+    color: #fbd895;
+    padding: 5px 0px;
+}
+.p-cover{
+    /* font-size: 1.5rem; */
+    font-size: 3vh;
+    line-height: 3rem;
+    text-align: left;
+    font-weight: 200;
+}
+.h2-cover{
+    font-weight: 100;
+    font-size: 3vh;
+}
+
+/* CUARTA SECCION */
+#contenedor-1{
+        background-image: url("kanji.png");
+        min-width: 33.3%;
+    }
+#contenedor-2{
+        background-image: url("2.png");
+        min-width: 33.3%;
+    }
+#contenedor-3{
+        background-image: url("anime.jpg");
+        min-width: 33.3%;
+    }
+
+/* QUINTA SECCION */
+.quinta-seccion{
+    height: 100%;
+    display: flex;
+}
+.contenedor-quinta-seccion{
+    margin: auto;
+}
+.niveles-quinta{
+    gap: 70px;
+    padding: 40px 0px;
+}
+
+}
